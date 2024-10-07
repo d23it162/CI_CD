@@ -20,13 +20,12 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        shell: powershell # Use Windows PowerShell instead of pwsh
+        shell: cmd # Use cmd shell
 
       - name: Build the app
         run: npm run build
-        shell: powershell # Use Windows PowerShell instead of pwsh
+        shell: cmd # Use cmd shell
 
       - name: Deploy to Local Server
         run: |
-          # Copy the build files to your server's root directory
-        shell: powershell # Use Windows PowerShell instead of pwsh
+        shell: cmd # Use cmd shell
